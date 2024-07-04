@@ -1,7 +1,7 @@
 // Using console.log to display information
 
 console.log("Welocme");
-console.log('Pavithra');
+console.log('Pav');
 
 
 /* Further Adventures
