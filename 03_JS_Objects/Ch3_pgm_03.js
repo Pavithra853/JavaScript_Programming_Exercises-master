@@ -10,6 +10,16 @@ book = {
 
 console.log(book);
 
+var book2 = {
+    title: "To Kill a Mockingbird",
+    author: "Harper Lee",
+    published: 1960
+};
+
+// Log book2 to the console
+console.log(book2);
+
+
 
 
 /* Further Adventures
