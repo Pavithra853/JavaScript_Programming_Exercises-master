@@ -2,8 +2,8 @@
 
 var score;
 var message;
-var name;
-
+var name;  
+ 
 /* Further Adventures
  *
  * 1) Delete the semicolon at after the word score.
