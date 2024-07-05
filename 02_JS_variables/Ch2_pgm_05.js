@@ -5,8 +5,13 @@ var message;
 message = "Hello World!";
 console.log(message);
 
-message = 'Congratulations! Your tweet has won a prize...';
+// Splitting the second message into three pieces
+message = 'Congratulations' + '! ' + 'Your tweet has won a prize...';
 console.log(message);
+
+message = "This is the third message.";
+console.log(message);
+
 
 
 
