@@ -7,6 +7,8 @@ var StartWithCapital;
 var z5;
 
 
+var yield;
+
 
 
 /* Further Adventures
