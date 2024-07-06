@@ -3,8 +3,21 @@
 var book;
 
 book = {
-    title : "The Hobbit"
+    title: "The Hobbit"
 };
+
+// 1) Log book to the console.
+console.log(book);
+
+// 2) Create a second book.
+var book2 = {
+    title: "Harry Potter",
+    author: "J.K. Rowling",
+    year: 1997
+};
+
+// 3) Log book2 to the console.
+console.log(book2);
 
 
 
