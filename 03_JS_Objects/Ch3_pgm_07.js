@@ -5,13 +5,15 @@ var book2;
 book1 = {
     title  : "The Hobbit",
     author : "J. R. R. Tolkien",
-    year   : 1937
+    year   : 1937,
+    genre   : "Fantasy" 
 };
 
 book2 = {
     title  : "Northern Lights",
     author : "Philip Pullman",
-    year   : 1995
+    year   : 1995,
+    genre   : "Fantasy" 
 };
 
 console.log(book1);
