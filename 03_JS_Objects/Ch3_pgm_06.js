@@ -1,12 +1,12 @@
 // Using a variable as a property value
 
 var book;
-var bookName;
+var bookName; // Declare a variable to hold the book name
 
-bookName = "The Adventures of Tom Sawyer";
+bookName = "The Adventures of Tom Sawyer"; // Assign a string value to bookName
 
 book = {
-    title : bookName
+    title: bookName // Create an object 'book' with 'title' property assigned from 'bookName'
 };
 
 
