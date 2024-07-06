@@ -4,6 +4,16 @@ var book;
 
 book = {};
 
+var book = {
+    
+};
+
+var book = {
+
+};
+
+console.log(book);
+
 
 /* Further Adventures
  *
