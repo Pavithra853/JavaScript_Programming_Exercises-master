@@ -1,12 +1,12 @@
 // Using the findTotal function to display a calculation
 
-var number1 = 1000;
-var number2 = 66;
+var number1 = 500;
+var number2 = 75;
 var result;
 var findTotal;
 
 findTotal = function () {
-	result = number1 + number2;
+    result = number1 + number2;
 };
 
 findTotal();
