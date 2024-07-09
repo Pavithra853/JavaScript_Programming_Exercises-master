@@ -9,7 +9,7 @@ var location = {
     "longitude" : -122.418,
     "elevation" : 47.000
   };
-  
+  console.log(location.city + " in " + location.state + " in " + location.country);
   
   
   /* Further Adventures
