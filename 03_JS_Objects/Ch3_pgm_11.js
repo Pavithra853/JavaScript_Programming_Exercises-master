@@ -4,7 +4,7 @@ var player1;
 
 player1 = {
 	  name: "Max",
-	  score: 0
+	  score: 10
 };
 
 console.log(player1.name + " has scored " + player1.score);
