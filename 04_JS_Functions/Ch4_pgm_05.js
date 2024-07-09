@@ -14,6 +14,7 @@ displayMenu = function () {
 	console.log("(9) Quit");
 };
 
+var number1, number2, result;
 
 
 /* Further Adventures
