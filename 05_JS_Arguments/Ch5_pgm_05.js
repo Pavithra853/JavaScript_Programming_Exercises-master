@@ -13,7 +13,29 @@ square(-2);
 square(1111);
 square(0.5);
 
+var cube = function(numberToCube) {
+  var result;
+  result = numberToCube * numberToCube * numberToCube;
+  console.log(numberToCube + " cubed = " + result);
+};
 
+// Testing the cube function
+cube(3);
+cube(-1);
+cube(2.5);
+cube(0);
+
+// Square root function
+var squareRoot = function(number) {
+  var result = Math.sqrt(number);
+  console.log("The square root of " + number + " is " + result);
+};
+
+// Testing the squareRoot function
+squareRoot(9);
+squareRoot(16);
+squareRoot(2);
+squareRoot(0);
 
 /* Further Adventures
  *
