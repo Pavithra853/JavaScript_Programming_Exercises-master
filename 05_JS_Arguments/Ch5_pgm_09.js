@@ -9,7 +9,8 @@ showPlayerHealth = function (playerName, playerHealth) {
 showPlayerHealth("Kandra", 50);
 showPlayerHealth("Dax", 40);
 
-
+showPlayerHealth("John", 60);
+showPlayerHealth("Alice", 30);
 
 /* Further Adventures
  *
