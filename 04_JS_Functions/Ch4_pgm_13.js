@@ -32,6 +32,14 @@ showPlayerInfo();
 player = player2;
 showPlayerInfo();
 
+var showPlayerInfo = function () {
+    console.log(player.name);
+    console.log("------------------------------");
+    showPlayerPlace(player);
+    showPlayerHealth(player);
+    console.log("------------------------------");
+    console.log("");
+};
 
 
 /* Further Adventures
