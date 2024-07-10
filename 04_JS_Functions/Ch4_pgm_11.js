@@ -1,4 +1,7 @@
-// Using the same function with multiple objects
+/* Get Programming with JavaScript
+ * Listing 4.11
+ * Using the same function with multiple objects
+ */
 
 var movie1;
 var movie2;
@@ -40,6 +43,24 @@ showMovieInfo();
 
 movie = movie3;
 showMovieInfo();
+
+
+
+/* Further Adventures
+ *
+ * 1) Create an object to represent
+ *    a multiple choice quiz question.
+ *
+ * 2) Create two more quiz question objects.
+ *
+ * 3) Create a function to show
+ *    the question and answer options.
+ *
+ * 4) Use the same variable assignment technique
+ *    as above to display all three questions
+ *    on the console.
+ *
+ */
 
 
 
