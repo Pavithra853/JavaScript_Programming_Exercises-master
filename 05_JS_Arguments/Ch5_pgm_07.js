@@ -9,7 +9,16 @@ showPlayerName = function (playerName) {
 showPlayerName("Kandra");
 showPlayerName("Dax");
 
+var showNameLength = function (playerName) {
+    var length = playerName.length;
+    console.log("The player's name '" + playerName + "' has " + length + " letters.");
+};
 
+// Testing the showNameLength function
+showNameLength("Kandra");
+showNameLength("Dax");
+showNameLength("John");
+showNameLength("Alice Johnson");
 
 /* Further Adventures
  *
