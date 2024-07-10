@@ -6,8 +6,9 @@ showMessage = function (message) {
 	console.log("The message is: " + message);
 };
 
-showMessage("It's full of stars!");
-
+showMessage("The universe is vast");
+showMessage("It's full of stars");
+showMessage("It's full of flowers");
 
 
 /* Further Adventures
