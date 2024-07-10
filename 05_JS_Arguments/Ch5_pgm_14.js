@@ -12,20 +12,35 @@ var showPlayerPlace = function (playerName, playerPlace) {
     console.log(playerName + " is in " + playerPlace);
 };
 
-var showPlayerInfo = function (playerName, playerPlace, playerHealth) {
+// Function to show a line of specified length
+var showLine = function (length) {
+    var line = "****************************"; // Long string of asterisks
+    console.log(line.substring(0, length));
+};
+
+// Function to show a blank line
+var showBlankLine = function () {
     console.log("");
+};
 
-    showPlayerName(playerName);
+// Updated showPlayerInfo function
+var showPlayerInfo = function (playerName, playerPlace, playerHealth) {
+    showBlankLine();
 
-    console.log("----------------------------");
+    var nameLineLength = playerName.length + 4; // Length of the name line including the spaces and asterisks
+    showLine(nameLineLength);
+    console.log("* " + playerName + " *");
+    showLine(nameLineLength);
+
+    showBlankLine();
 
     showPlayerPlace(playerName, playerPlace);
     showPlayerHealth(playerName, playerHealth);
 
-    console.log("----------------------------");
-    console.log("");
+    showBlankLine();
 };
 
+// Player objects
 var player1 = {
     name: "Kandra",
     place: "The Dungeon of Doom",
@@ -38,9 +53,9 @@ var player2 = {
     health: 40
 };
 
+// Display player info
 showPlayerInfo(player1.name, player1.place, player1.health);
 showPlayerInfo(player2.name, player2.place, player2.health);
-
 
 
 
