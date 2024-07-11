@@ -10,7 +10,11 @@ var nextYear = [ place3 ];
 console.log(thisYear);
 console.log(nextYear);
 
+nextYear.push(place1);
 
+// 2) Log both arrays again to check
+console.log(thisYear);
+console.log(nextYear);
 
 /* Further Adventures
  *
