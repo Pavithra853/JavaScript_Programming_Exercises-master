@@ -6,7 +6,12 @@ var dayInWeek = 4;
 console.log( days[dayInWeek] );
 console.log( days[dayInWeek - 1] );
 
+var getDay = function(index) {
+    return days[index];
+};
 
+// 3) Call your function and log the value it returns
+console.log( getDay(4) );  // Should output "Friday"
 
 /* Further Adventures
  *
