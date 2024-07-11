@@ -29,4 +29,17 @@ displaySizes(planet1);
  * 2) Update the displaySizes function so it also
  *    displays the diameter on the console.
  *
+ */                         
+
+
+/* Further Adventures
+ *
+ * The diameter of a planet is double its radius.
+ *
+ * 1) Update the calculateSizes function so it also
+ *    adds a diameter property to the planet.
+ *
+ * 2) Update the displaySizes function so it also
+ *    displays the diameter on the console.
+ *
  */
