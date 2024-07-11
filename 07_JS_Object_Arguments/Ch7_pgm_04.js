@@ -24,6 +24,25 @@ showPoint(point1);
 console.log("Move 4 across and 2 down");
 showPoint(point2);
 
+var reflectX = function(point) {
+    return {
+        x: point.x,
+        y: -point.y
+    };
+};
+
+var reflectedPoint = reflectX(point1);
+showPoint(reflectedPoint);  // Displays (2, -5)
+
+var rotate90 = function(point) {
+    return {
+        x: -point.y,
+        y: point.x
+    };
+};
+
+var rotatedPoint = rotate90(point1);
+showPoint(rotatedPoint);  // Displays (-5, 2)
 
 
 /* Further Adventures
