@@ -35,7 +35,14 @@ getPlayerInfo = function (playerName, playerPlace, playerHealth) {
     return playerInfo;
 };
 
+// First player info
 console.log(getPlayerInfo("Kandra", "The Dungeon of Doom", 50));
+
+// Second player info
+console.log(getPlayerInfo("Dorian", "The Enchanted Forest", 75));
+
+// Calling getPlayerInfo without any arguments
+console.log(getPlayerInfo());
 
 
 
