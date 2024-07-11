@@ -1,23 +1,43 @@
 // Returning a value from a function
 
-var getMessage;
-var getMyMessage;
-var response;
+var getPlayerName;
+var getPlayerHealth;
+var getPlayerPlace;
+var getPlayerInfo;
+var getBorder;
 
-getMessage = function () {
-    return "I’m going on an adventure!";
+getPlayerName = function (playerName) {
+    return playerName;
 };
 
-getMyMessage = function () {
-    return "This is my custom message!";
-}
+getPlayerHealth = function (playerName, playerHealth) {
+    return playerName + " has health " + playerHealth;
+};
 
-response = getMessage();
+getPlayerPlace = function (playerName, playerPlace) {
+    return playerName + " is in " + playerPlace;
+};
 
-console.log(response);
+getBorder = function () {
+    return "********************";
+};
 
-response = getMyMessage();
-console.log(response);
+getPlayerInfo = function (playerName, playerPlace, playerHealth) {
+    var playerInfo;
+
+    playerInfo = "\n" + getPlayerName(playerName);
+    playerInfo += "\n" + getBorder();
+    playerInfo += "\n" + getPlayerPlace(playerName, playerPlace);
+    playerInfo += "\n" + getPlayerHealth(playerName, playerHealth);
+    playerInfo += "\n" + getBorder();
+    playerInfo += "\n";
+
+    return playerInfo;
+};
+
+console.log(getPlayerInfo("Kandra", "The Dungeon of Doom", 50));
+console.log(getPlayerInfo("Dax", "The Bath", 70));
+
 
 /* Further Adventures
  *
