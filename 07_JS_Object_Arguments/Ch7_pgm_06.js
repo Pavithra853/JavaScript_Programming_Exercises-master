@@ -11,8 +11,37 @@ var line = function (lineLength) {
   console.log(line(40));
   console.log(line(50));
   
-  
-  
+  for (var i = -20; i <= 60; i += 10) {
+    console.log("Line length: " + i);
+    console.log(line(i));
+}
+
+var spaces = function (spaceLength) {
+  spaceLength = Math.max(0, spaceLength);
+  spaceLength = Math.min(40, spaceLength);
+  return " ".repeat(spaceLength);
+};
+
+console.log(spaces(10));   // Output: "          "
+console.log(spaces(0));    // Output: ""
+console.log(spaces(50));   // Output: "                                        "
+
+var emptyBox = function (boxWidth) {
+  boxWidth = Math.max(1, boxWidth);  // Ensure boxWidth is at least 1
+  boxWidth = Math.min(40, boxWidth); // Ensure boxWidth is at most 40
+
+  var topBottomLine = line(boxWidth);  // Top and bottom line of the box
+  var middleLine = "= " + spaces(boxWidth - 4) + " =";  // Middle lines with spaces
+
+  console.log(topBottomLine);
+  for (var i = 0; i < 3; i++) {
+      console.log(middleLine);
+  }
+  console.log(topBottomLine);
+};
+
+emptyBox(12);
+
   /* Further Adventures
    *
    * 1) Test line lengths from -20 to 60
