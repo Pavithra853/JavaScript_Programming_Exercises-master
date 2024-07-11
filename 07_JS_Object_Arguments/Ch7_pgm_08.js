@@ -4,7 +4,14 @@ var message = "We choose to go to the Moon!";
 
 console.log(message.substr(3, 12));
 
+console.log(message.substr(17));     // Output: "Moon!"
+console.log(message.substr(11, 6));  // Output: "go to "
+console.log(message.substr(0, 10));  // Output: "We choose "
 
+console.log(message.substr(14));  // Output: "to the Moon!"
+
+console.log(message.substr(-5));    // Output: "Moon!"
+console.log(message.substr(3, -4)); // Output: "choos" (negative length counts from the end)
 
 /* Further Adventures
  *
