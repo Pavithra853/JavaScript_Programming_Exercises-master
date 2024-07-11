@@ -8,7 +8,25 @@ console.log("The second score is " + scores[1]);
 console.log("The third score is " + scores[2]);
 console.log("The fourth score is " + scores[3]);
 
+scores.push(5);
 
+// 2) Add an extra console.log to display the new score
+console.log("The fifth score is " + scores[4]);
+
+// 3) Log the value of the last element to the console
+console.log("The last score is " + scores[scores.length - 1]);
+
+// 4) Add an extra score to the array and run the program again
+scores.push(7);
+
+// Re-run the existing console.logs
+console.log("There are " + scores.length + " scores:");
+console.log("The first score is " + scores[0]); 
+console.log("The second score is " + scores[1]);
+console.log("The third score is " + scores[2]);
+console.log("The fourth score is " + scores[3]);
+console.log("The fifth score is " + scores[4]);
+console.log("The last score is " + scores[scores.length - 1]);
 
 /* Further Adventures
  *
