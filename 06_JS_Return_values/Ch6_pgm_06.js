@@ -5,22 +5,37 @@ var getHelloTo;
 var sum;
 var totalCost;
 
-getMessage = function () {
+var getMessage = function () {
     return "I’m going on an adventure!"; 
 };
 
-getHelloTo = function (name) {
+var getHelloTo = function (name) {
     return "Hello to " + name;
 };
 
-sum = function (number1, number2) {
+var sum = function (number1, number2) {
     return number1 + number2;
 };
 
-totalCost = function (callOutCharge, costPerHour, numberOfHours) {
+var totalCost = function (callOutCharge, costPerHour, numberOfHours) {
     return callOutCharge + costPerHour * numberOfHours;
 };
 
+ getMessage()
+
+console.log("I’m going on an adventure!")
+
+ getHelloTo("Dax")
+console.log("Hello to Dax")
+
+ getHelloTo("Kandra")
+console.log("Hello to Kandra")
+
+ sum(10, 20)
+console.log(30)
+
+ totalCost(30, 40, 3)
+console.log(150)
 
 
 /* Further Adventures
