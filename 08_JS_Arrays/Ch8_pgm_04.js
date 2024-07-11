@@ -10,6 +10,20 @@ var getDay = function(index) {
     return days[index];
 };
 
+console.log(getDay(4));  // Should output "Friday"
+
+var days = ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"];
+var dayInWeek = 2;  // Changed from 4 to 2
+
+console.log(days[dayInWeek]);  // Should output "Wednesday"
+console.log(days[dayInWeek - 1]);  // Should output "Tuesday"
+
+var getDay = function(index) {
+    return days[index];
+};
+
+console.log(getDay(4));  // Should output "Friday"
+
 // 3) Call your function and log the value it returns
 console.log( getDay(4) );  // Should output "Friday"
 
