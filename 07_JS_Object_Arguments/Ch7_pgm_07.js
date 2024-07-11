@@ -5,7 +5,19 @@ var bigPlanet = planet.toUpperCase();
 
 console.log(planet + " becomes " + bigPlanet);
 
+var getBig = function (text) {
+    return text.toUpperCase();
+};
 
+var result = getBig("earth");  // Output: "EARTH"
+console.log(result);
+
+var getSmall = function (text) {
+    return text.toLowerCase();
+};
+
+var result = getSmall("VENUS");  // Output: "venus"
+console.log(result);
 
 /* Further Adventures
  *
