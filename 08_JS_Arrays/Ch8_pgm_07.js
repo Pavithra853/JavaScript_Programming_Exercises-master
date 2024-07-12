@@ -15,6 +15,36 @@ showInfo = function (itemToShow) {
 
 items.forEach(showInfo);
 
+var items;
+var showInfo;
+
+items = [
+  "The Pyramids",
+  "The Grand Canyon",
+  "Bondi Beach"
+];
+
+// Adding extra items
+items.push("Eiffel Tower");
+items[items.length] = "Statue of Liberty";
+items.push("Great Wall of China");
+
+showInfo = function (itemToShow) {
+    console.log(itemToShow + " (" + itemToShow.length + " letters)");
+};
+
+items.forEach(showInfo);
+
+// Function to find the total number of letters
+var totalLetters = function (itemsArray) {
+    var total = 0;
+    itemsArray.forEach(function (item) {
+        total += item.length;
+    });
+    return total;
+};
+
+console.log("Total number of letters: " + totalLetters(items));
 
 
 /* Further Adventures
