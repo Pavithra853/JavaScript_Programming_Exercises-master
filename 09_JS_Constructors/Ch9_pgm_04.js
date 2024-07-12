@@ -16,7 +16,10 @@ var planet = new Planet( "Jupiter", 5, "Gas Giant" );
 
 planet.showPlanet();
 
+var planet2 = new Planet("Neptune", 8, "Ice Giant");
 
+// 2) Call the showPlanet method on your newly created planet.
+planet2.showPlanet();
 
 /* Further Adventures
  *

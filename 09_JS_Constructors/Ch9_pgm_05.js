@@ -16,14 +16,53 @@ var Planet = function (name, position, type) {
     this.addMoon = function (moon) {
         this.moons.push(moon);
     };
+
+    this.removeMoon = function () {
+        if (this.moons.length > 0) {
+            this.moons.pop();
+        } else {
+            console.log("No moons to remove.");
+        }
+    };
 };
 
-var planet = new Planet( "Jupiter", 5, "Gas Giant" );
+var planet1 = new Planet("Jupiter", 5, "Gas Giant");
 
-planet.addMoon("Io");
-planet.addMoon("Europa");
+planet1.addMoon("Io");
+planet1.addMoon("Europa");
 
-planet.showPlanet();
+planet1.showPlanet();
+
+// Further Adventures
+
+// 1) Create a second planet.
+var planet2 = new Planet("Saturn", 6, "Gas Giant");
+
+// 2) Add three moons to the second planet.
+planet2.addMoon("Titan");
+planet2.addMoon("Enceladus");
+planet2.addMoon("Mimas");
+
+// 3) Call the showPlanet method on the second planet.
+planet2.showPlanet();
+
+// 4) Add a removeMoon method that removes the last moon from the moons array.
+Planet.prototype.removeMoon = function () {
+    if (this.moons.length > 0) {
+        this.moons.pop();
+    } else {
+        console.log("No moons to remove.");
+    }
+};
+
+// Test the removeMoon method
+planet2.removeMoon();
+planet2.showPlanet();
+planet2.removeMoon();
+planet2.showPlanet();
+planet2.removeMoon();
+planet2.showPlanet();
+planet2.removeMoon(); // Should log "No moons to remove."
 
 
 
