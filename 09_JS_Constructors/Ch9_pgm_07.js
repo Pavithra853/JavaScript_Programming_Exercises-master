@@ -29,7 +29,15 @@ question1.addOption("Brussels");
 
 question1.showQuestion();
 
+var question2 = new QuizQuestion(
+    "Which planet is known as the Red Planet?",
+    "Mars"
+);
 
+question2.addOption("Earth");
+question2.addOption("Mars");
+question2.addOption("Jupiter");
+question2.addOption("Saturn");
 
 /* Further Adventures
  *
