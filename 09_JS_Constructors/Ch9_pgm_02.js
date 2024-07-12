@@ -25,7 +25,14 @@ var planet1 = buildPlanet(
 
 planet1.showPlanet();
 
+var planet2 = buildPlanet(
+    "Mars",
+    4,
+    "Terrestrial"
+);
 
+// 2) Call the showPlanet method on your new planet.
+planet2.showPlanet();
 
 /* Further Adventures
  *
