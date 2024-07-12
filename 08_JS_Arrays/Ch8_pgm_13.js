@@ -101,7 +101,26 @@ var spacer = {
   
   showPlayerInfo(player1, "*");
   
+  var showItem = function (player, itemNumber) {
+    if (itemNumber > 0 && itemNumber <= player.items.length) {
+      console.log("Item " + itemNumber + ": " + player.items[itemNumber - 1]);
+    } else {
+      console.log("Invalid item number");
+    }
+  };
   
+  // 4) Add item function
+  var addItem = function (player, itemTitle) {
+    player.items.push(itemTitle);
+    console.log(itemTitle + " has been added.");
+  };
+  
+  // Test the showItem function
+  showItem(player1, 1); // Should display: Item 1: a trusty lamp
+  
+  // Test the addItem function
+  addItem(player1, "a shiny sword");
+  showPlayerInfo(player1, "=");
   
   
   /* Further Adventures
