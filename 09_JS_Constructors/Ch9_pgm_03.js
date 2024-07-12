@@ -27,6 +27,12 @@ planets.forEach(function (planet) {
     planet.showPlanet();
 });
 
+planets.forEach(function (planet, index) {
+    planet.showPlanet();
+    if (index < planets.length - 1) {
+        console.log("--------------------");
+    }
+});
 
 
 /* Further Adventures
