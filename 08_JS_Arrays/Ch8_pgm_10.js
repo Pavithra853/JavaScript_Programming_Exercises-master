@@ -6,6 +6,47 @@
     console.log("Array: " + wholeArray);
   });
   
+  var rectangles = [
+    { length: 5, width: 4 },
+    { length: 7, width: 3 },
+    { length: 6, width: 2 }
+  ];
+
+  function assignArea(rectangle) {
+    rectangle.area = rectangle.length * rectangle.width;
+  }
+
+  function showInfo(rectangle) {
+    console.log("Length: " + rectangle.length);
+    console.log("Width: " + rectangle.width);
+    console.log("Area: " + rectangle.area);
+  }
+
+  rectangles.forEach(function(rectangle) {
+    assignArea(rectangle);
+    showInfo(rectangle);
+  });
+
+  var rectangles = [
+    { length: 5, width: 4 },
+    { length: 7, width: 3 },
+    { length: 6, width: 2 }
+  ];
+  
+  function assignArea(rectangle) {
+    rectangle.area = rectangle.length * rectangle.width;
+  }
+  
+  function showInfo(rectangle) {
+    console.log("Length: " + rectangle.length);
+    console.log("Width: " + rectangle.width);
+    console.log("Area: " + rectangle.area);
+  }
+  
+  rectangles.forEach(function(rectangle) {
+    assignArea(rectangle);
+    showInfo(rectangle);
+  });
   
   
   /* Further Adventures
