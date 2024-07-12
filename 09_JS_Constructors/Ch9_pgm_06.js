@@ -1,17 +1,29 @@
+
 var Planet = function (name, position, type) {
     this.name = name;
     this.position = position;
     this.type = type;
     this.moons = [];
   
+    this.showMoons = function () {
+        this.moons.forEach(function(moon, index) {
+            console.log("(" + index + ") " + moon);
+        });
+    };
+  
     this.showPlanet = function () {
         console.log(this.name);
         console.log("Planet " + this.position + " - " + this.type);
-        console.log("Moons: " + this.moons.join(', ') + ".");
+        console.log("Moons:");
+        this.showMoons();
     };
   
     this.addMoon = function (moon) {
         this.moons.unshift(moon);
+    };
+  
+    this.getMoon = function (index) {
+        return this.moons[index];
     };
 };
 
@@ -28,7 +40,8 @@ var planet3 = new Planet("Mercury", 1, "Terrestrial");
     planet.showPlanet();
 });
 
-
+console.log(planet1.getMoon(1));
+  
 
 /* Further Adventures
  *
