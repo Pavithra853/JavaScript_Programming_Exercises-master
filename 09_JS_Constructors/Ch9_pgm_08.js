@@ -29,7 +29,15 @@ var calEvent = new CalendarEvent(
 
 calEvent.showEvent();
 
+var calEvent2 = new CalendarEvent(
+    "Team Meeting",
+    "3/6/16",
+    "10.30am",
+    "11.30am"
+);
 
+// 2) Call the showEvent method on your new calendar event
+calEvent2.showEvent();
 
 /* Further Adventures
  *
