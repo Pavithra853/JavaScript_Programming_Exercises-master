@@ -9,6 +9,14 @@ items.forEach(function (item) {
 });
 
 
+items.push("Eiffel Tower");
+items.push("Statue of Liberty");
+
+// Remove an item
+items.pop();
+
+
+
 
 /* Further Adventures
  *
