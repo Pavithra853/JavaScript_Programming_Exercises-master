@@ -178,7 +178,18 @@ var spacer = {
   
   player1.showInfo("=");
   
+  var player2 = new Player("Thorne", 60);
+  player2.place = library;
+  player2.addItem("a potion of healing");
+  player2.addItem("a map");
   
+  // Display each player's info
+  player1.showInfo("="); // Display player1's info with '=' as the border
+  player2.showInfo("="); // Display player2's info with '=' as the border
+
+  
+  // Display player1's info after dropping an item
+  player1.showInfo("=");
   
   /* Further Adventures
    *
