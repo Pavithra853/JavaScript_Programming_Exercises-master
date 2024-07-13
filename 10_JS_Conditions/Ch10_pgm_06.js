@@ -14,9 +14,11 @@ var getGuesser = function () {
     };
   };
   
-  var guess = getGuesser();
+  var guess = getGuesser(20,10);
   
-  
+  console.log(guess(15));  
+  console.log(guess(25));  
+
   
   /* Further Adventures
    *
