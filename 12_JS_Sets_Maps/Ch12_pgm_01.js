@@ -9,3 +9,4 @@ const countries = ['Finland', 'Sweden', 'Norway']
 // Clear a set
 // Create a set of 5 string elements from array
 // Create a map of countries and number of characters of a country
+

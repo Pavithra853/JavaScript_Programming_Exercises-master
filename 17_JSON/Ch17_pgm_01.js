@@ -119,3 +119,42 @@ const txt = `{
 // Level 3
 // 1. Parse the txt JSON to object.
 // 2. Find the user who has many skills from the variable stored in txt.
+
+const skillsJSON = JSON.stringify(skills);
+console.log(skillsJSON); // Output: '["HTML","CSS","JS","React","Node","Python"]'
+
+const ageJSON = JSON.stringify(age);
+console.log(ageJSON); // Output: '250'
+
+const isMarriedJSON = JSON.stringify(isMarried);
+console.log(isMarriedJSON); // Output: 'true'
+
+const studentJSON = JSON.stringify(student);
+console.log(studentJSON);
+
+const { firstName, lastName, skills: studentSkills } = student;
+const studentSubsetJSON = JSON.stringify({ firstName, lastName, skills: studentSkills });
+console.log(studentSubsetJSON);
+
+const users = JSON.parse(txt);
+console.log(users);
+
+// Function to find user with most skills
+function findUserWithMostSkills(users) {
+    let maxSkills = 0;
+    let userWithMostSkills = null;
+  
+    for (let user in users) {
+      if (users[user].skills.length > maxSkills) {
+        maxSkills = users[user].skills.length;
+        userWithMostSkills = user;
+      }
+    }
+  
+    return userWithMostSkills;
+  }
+  
+  const userWithMostSkills = findUserWithMostSkills(users);
+  console.log(userWithMostSkills); // Output: 'Asab' (based on the data provided in 'txt')
+
+  
