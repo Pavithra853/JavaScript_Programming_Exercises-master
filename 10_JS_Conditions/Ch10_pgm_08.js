@@ -237,7 +237,13 @@ var getGame = function () {
   
   var game = getGame();
   
-  
+  console.log(game.go("south"));  // Moves the player south to the library
+  console.log(game.get());        // Gets the item in the current place
+  console.log(game.go("up"));     // Moves the player up to the attic
+  console.log(game.go("down"));   // Moves the player down to the basement
+  console.log(game.go("west"));   // Tries to move the player west from the basement (non-existent direction)
+  console.log(game.get());        // Tries to get an item when there are none left
+
   
   /* Further Adventures
    *
