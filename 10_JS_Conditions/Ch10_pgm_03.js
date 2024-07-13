@@ -14,7 +14,8 @@ var getGuesser = function () {
   
   var guess = getGuesser();
   
-  
+  guess(8);  
+guess(5);  
   
   /* Further Adventures
    *
