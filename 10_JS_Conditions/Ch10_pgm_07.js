@@ -67,7 +67,9 @@ var getQuiz = function () {
   
   var quiz = getQuiz();
   
-  
+  console.log(quiz.quizMe());  
+console.log(quiz.submit("Everest"));  
+
   
   /* Further Adventures
    *
